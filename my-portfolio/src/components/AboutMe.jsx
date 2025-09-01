@@ -11,8 +11,8 @@ export default function AboutMe() {
       <MotionH2
         initial={{ y: 20, opacity: 0 }}         // Start lower and invisible
         whileInView={{ y: 0, opacity: 1 }}      // Animate into place
-        transition={{ duration: 0.8}}
-          viewport={{ once: false, amount: 0.3 }}  
+        transition={{ duration: 0.4}}
+          viewport={{ once: false, amount: 0.2 }}  
         className="text-3xl sm:text-5xl font-bold text-center mb-6 
           bg-gradient-to-r from-amber-200 via-amber-300 to-amber-600 
           bg-clip-text text-transparent relative
@@ -30,8 +30,8 @@ export default function AboutMe() {
         className="w-full h-66 object-cover rounded-2xl mt-16"
         initial={{ x: -40, opacity: 0 }}        // Slide from left
         whileInView={{ x: 0, opacity: 1 }}       // Animate into place
-        transition={{ duration: 0.8 ,ease:'easeIn'}}
-         viewport={{ once: false, amount: 0.3 }}  
+        transition={{ duration: 0.4 ,ease:'easeInOut'}}
+         viewport={{ once: false, amount: 0.2 }}  
       />
 
       {/* Full-width paragraph */}
@@ -39,8 +39,8 @@ export default function AboutMe() {
         className="w-full text-xs sm:text-base text-gray-400 leading-relaxed mt-4 px-0 "
         initial={{ x: 100, opacity: 0 }}         // Slide from right
         whileInView={{ x: 0, opacity: 1 }}
-        transition={{ duration: 0.8, ease: 'easeIn' }}
-          viewport={{ once: false, amount: 0.3 }}  // <-- changed
+        transition={{ duration: 0.4, ease: 'easeInOut' }}
+          viewport={{ once: false, amount: 0.2 }}  // <-- changed
       >
         I am a full-stack web developer specializing in MERN and MEAN stacks,
         with experience building and maintaining applications using Angular,
