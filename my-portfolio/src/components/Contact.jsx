@@ -51,10 +51,10 @@ export default function Contact() {
       {/* Contact Cards */}
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 max-w-5xl mx-auto">
         {contacts.map((item, index) => (
-          <Dmotion initial={{x:-40,opacity:0}}
-                  whileInView={{x:0,opacity:1}}
-                  transition={{duration:0.3}}
-                  viewport={{once:false,amount:0.1}}
+          <Dmotion initial={{ opacity: 0, scale: 0.98 }}
+  whileInView={{ opacity: 1, scale: 1 }}
+  transition={{ duration: 0.6, ease: 'easeInOut' }}
+                  viewport={{once:false,amount:0.3}}
             key={index}
             className="bg-slate-900 border border-gray-700 rounded-2xl shadow-md p-6 flex flex-col items-center transform transition-transform duration-300 hover:shadow-[0_4px_3px_rgba(251,191,36,0.7)] hover:scale-105"
           >
