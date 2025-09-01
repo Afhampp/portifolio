@@ -5,7 +5,9 @@ export default function Footer() {
     <footer className="bg-slate-950 text-white pt-10 pb-6 border-t border-gray-600">
       <div className="text-center">
         {/* Name */}
-        <h2 className="text-3xl font-bold  bg-gradient-to-r from-amber-200 via-amber-300 to-amber-600 bg-clip-text text-transparent">Afham Dunnur</h2>
+        <h2 className="text-3xl font-bold  bg-gradient-to-r from-amber-200 via-amber-300 to-amber-600 bg-clip-text text-transparent">
+          Afham Dunnur
+        </h2>
         <p className="text-gray-400">Web Developer</p>
 
         {/* Social Links */}

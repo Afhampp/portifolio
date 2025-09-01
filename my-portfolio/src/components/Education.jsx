@@ -1,6 +1,6 @@
 import React from "react";
 import { FaGraduationCap, FaMapMarkerAlt, FaCalendarAlt } from "react-icons/fa";
-import {motion} from 'framer-motion'
+import { motion } from "framer-motion";
 
 const educationData = [
   {
@@ -22,32 +22,42 @@ const educationData = [
     cgpa: "10",
   },
 ];
-const {h2:H2motion,p:Pmotion,div:DivMotion}=motion
+const { h2: H2motion, p: Pmotion, div: DivMotion } = motion;
 
 export default function Education() {
   return (
     <section id="education" className="py-18 bg-slate-950">
       <div className="max-w-5xl mx-auto px-4">
-        <H2motion initial={{y:30,opacity:0}}
-                  whileInView={{y:0,opacity:1}}
-                  transition={{duration:0.8}}
-                  viewport={{once:false,amount:0.3}} className="text-3xl sm:text-4xl font-bold text-center mb-2 bg-gradient-to-r from-amber-200 via-amber-300 to-amber-600 bg-clip-text text-transparent relative
+        <H2motion
+          initial={{ y: 30, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: false, amount: 0.3 }}
+          className="text-3xl sm:text-4xl font-bold text-center mb-2 bg-gradient-to-r from-amber-200 via-amber-300 to-amber-600 bg-clip-text text-transparent relative
     after:content-[''] after:block after:w-24 after:h-1 after:mx-auto after:mt-3
     after:bg-gradient-to-r after:from-amber-200 after:via-amber-400 after:to-amber-600 
-    after:rounded-full">Education</H2motion>
-        <Pmotion initial={{y:30,opacity:0}}
-                  whileInView={{y:0,opacity:1}}
-                  transition={{duration:0.8}}
-                  viewport={{once:false,amount:0.3}} className="text-center text-gray-400  text-sm sm:textbase mt-3 mb-9">
-          My academic journey and educational achievements that built the foundation for my career.
+    after:rounded-full"
+        >
+          Education
+        </H2motion>
+        <Pmotion
+          initial={{ y: 30, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: false, amount: 0.3 }}
+          className="text-center text-gray-400  text-sm sm:textbase mt-3 mb-9"
+        >
+          My academic journey and educational achievements that built the
+          foundation for my career.
         </Pmotion>
 
         <div className="space-y-6">
           {educationData.map((edu, idx) => (
-            <DivMotion initial={{x:-90,opacity:0}}
-                  whileInView={{x:0,opacity:1}}
-                  transition={{duration:0.3,ease:'easeIn'}}
-                  viewport={{once:false,amount:0.4}}
+            <DivMotion
+              initial={{ x: -90, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.3, ease: "easeIn" }}
+              viewport={{ once: false, amount: 0.4 }}
               key={idx}
               className="bg-slate-900 border border-gray-700 shadow-md rounded-2xl p-6  transition-transform duration-300 hover:scale-103 hover:shadow-md hover:shadow-amber-500"
             >
@@ -62,11 +72,9 @@ export default function Education() {
 
                 <div>
                   <span className="px-1 sm:px-4 py-1 bg-gradient-to-r from-amber-200 via-amber-300 to-amber-500 opacity-100 text-blue-700 rounded-full text-xs sm:text-sm font-medium">
-
-
-  {/* sm and above: show "CGPA: ..." */}
-  <span >CGPA: {edu.cgpa}</span>
-</span>
+                    {/* sm and above: show "CGPA: ..." */}
+                    <span>CGPA: {edu.cgpa}</span>
+                  </span>
                 </div>
               </div>
 
